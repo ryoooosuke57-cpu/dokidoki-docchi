@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a0b2e">
+<meta name="description" content="恋愛の本音を2択で当て合うクイズ。答えを作ってリンクを送ると、友達があなたの答えを当てにきます。18歳以上向けの内容を含みます。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ryoooosuke57-cpu.github.io/dokidoki-docchi/">
+<meta property="og:title" content="ドキドキ❤︎どっちどっち？">
+<meta property="og:description" content="恋愛の本音を2択で当て合うクイズ。答えを作ってリンクを送ると、友達があなたの答えを当てにきます。18歳以上向けの内容を含みます。">
+<meta property="og:image" content="https://ryoooosuke57-cpu.github.io/dokidoki-docchi/ogp.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ドキドキ❤︎どっちどっち？">
+<meta name="twitter:description" content="恋愛の本音を2択で当て合うクイズ。答えを作ってリンクを送ると、友達があなたの答えを当てにきます。18歳以上向けの内容を含みます。">
+<meta name="twitter:image" content="https://ryoooosuke57-cpu.github.io/dokidoki-docchi/ogp.png">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💘%3C/text%3E%3C/svg%3E">
+
+<title>ドキドキ❤︎どっちどっち？</title>
+<style>
+:root{--bg:#1a0b2e;--card:rgba(44,20,72,.78);--tx:#fdeefa;--sub:#cfa9e6;--pri:#c026d3;--pri2:#ff4d94;--bd:#6a2f98;--ok:#34d399;--ng:#fb7185;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;color:var(--tx);font-family:"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;line-height:1.6;background:radial-gradient(circle at 15% 0,#5a1f8f 0,transparent 48%),radial-gradient(circle at 95% 100%,#8a1a5a 0,transparent 48%),#1a0b2e;background-attachment:fixed;min-height:100%}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cpath fill='%23ff4d94' transform='translate(8 8) scale(1.4)' d='M12 21s-7.5-4.6-9.6-9.1C.9 8.5 3 5 6.4 5c1.9 0 3.4 1 4.4 2.4.3.4.9.4 1.2 0C13 6 14.5 5 16.4 5 19.8 5 22 8.5 20.4 11.9 18.3 16.4 12 21 12 21z'/%3E%3Cpath fill='%23d17bff' transform='translate(52 54) scale(.9)' d='M12 21s-7.5-4.6-9.6-9.1C.9 8.5 3 5 6.4 5c1.9 0 3.4 1 4.4 2.4.3.4.9.4 1.2 0C13 6 14.5 5 16.4 5 19.8 5 22 8.5 20.4 11.9 18.3 16.4 12 21 12 21z'/%3E%3C/svg%3E")}
+#hearts{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#hearts span{position:absolute;bottom:-60px;opacity:.28;animation:rise linear infinite;text-shadow:0 0 12px currentColor}
+@keyframes rise{from{transform:translateY(0) rotate(-12deg)}to{transform:translateY(-115vh) rotate(12deg)}}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@media (prefers-reduced-motion:reduce){#hearts span,.hh{animation:none}}
+main{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:28px;line-height:1.3;margin:10px 0;letter-spacing:.02em;background:linear-gradient(90deg,#ff7ab8,#e07bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hh{display:inline-block;animation:beat 1.3s ease-in-out infinite;-webkit-text-fill-color:#ff4d94;color:#ff4d94}
+.tag{display:inline-block;background:linear-gradient(90deg,var(--pri),var(--pri2));color:#fff;border-radius:99px;padding:2px 14px;font-size:12px;font-weight:700;box-shadow:0 0 14px rgba(255,77,148,.45)}
+.card{background:var(--card);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--bd);border-radius:20px;padding:18px;margin:14px 0;box-shadow:0 8px 30px rgba(192,38,211,.18)}
+.sub{color:var(--sub);font-size:14px}
+.note{background:rgba(255,77,148,.14);border:1px solid var(--pri2);border-radius:14px;padding:10px 12px;font-size:13px;margin:12px 0}
+button{font:inherit;cursor:pointer;border:0;border-radius:16px}
+button:disabled{opacity:.4;cursor:default}
+.main{width:100%;padding:15px;background:linear-gradient(90deg,var(--pri),var(--pri2));color:#fff;font-weight:700;font-size:16px;margin-top:8px;box-shadow:0 6px 22px rgba(255,77,148,.4)}
+.ghost{width:100%;padding:12px;background:rgba(255,255,255,.04);color:#ff9cc7;border:1.5px solid var(--pri2);font-weight:700;margin-top:8px}
+.chip{padding:8px 12px;background:transparent;color:#ff9cc7;border:1.5px solid var(--pri2);font-weight:700;font-size:13px;margin:6px 6px 0 0}
+.opt{display:block;width:100%;text-align:left;padding:18px;margin:12px 0;background:var(--card);color:var(--tx);border:2px solid var(--bd);font-size:17px;font-weight:600;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+.opt::before{content:"♡ ";color:var(--pri2)}
+.opt:hover,.opt:active{border-color:var(--pri2);box-shadow:0 0 18px rgba(255,77,148,.45)}
+.opt.ok{border-color:var(--ok);background:rgba(52,211,153,.16)}
+.opt.ng{border-color:var(--ng);background:rgba(251,113,133,.16)}
+.bar{height:8px;background:rgba(255,255,255,.12);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pri),var(--pri2));transition:width .3s}
+.q{font-size:21px;font-weight:700;margin:18px 0 8px;line-height:1.45}
+input[type=text]{width:100%;font:inherit;padding:12px;border-radius:14px;border:1.5px solid var(--bd);background:rgba(255,255,255,.06);color:var(--tx);margin-top:6px}
+input::placeholder{color:#9c7bb8}
+.it{display:flex;align-items:flex-start;padding:5px 0;font-size:14px}.it input{margin:5px 8px 0 0;flex:none}
+.adt{font-size:10px;background:var(--pri2);color:#fff;border-radius:6px;padding:0 6px;margin-left:6px;align-self:center}
+summary{cursor:pointer;padding:6px 0}
+.th{display:block;width:100%;text-align:left;color:var(--tx)}.th .sub{display:block}
+.th b::before{content:"♥ ";color:var(--pri2)}
+.score{font-size:60px;font-weight:800;text-align:center;margin:0;background:linear-gradient(90deg,#ff7ab8,#e07bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.code{word-break:break-all;font-family:ui-monospace,monospace;font-size:12px;background:rgba(0,0,0,.3);border:1px dashed var(--pri2);border-radius:12px;padding:10px;margin:8px 0;max-height:96px;overflow:auto}
+.row{display:flex;justify-content:space-between;gap:8px;font-size:14px;border-top:1px solid var(--bd);padding:8px 0}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+const L=[
+["元恋人の連絡先は…","残してある","全部消した"],["好きな人ができたら…","すぐ告白する","じっくり距離を詰める"],["ケンカしたとき…","自分からすぐ謝る","冷静になるまで待つ"],["恋人のスマホは…","見たことがある","絶対に見ない"],["嫉妬したら…","顔や態度に出る","隠して平気なふり"],["連絡頻度は…","毎日こまめに","用事があるときだけ"],["初デートなら…","ゆっくり食事","アクティビティ"],["失恋したら…","長く引きずる","切り替えが早い"],["恋愛では…","愛されたい","愛したい"],["浮気されたら…","即お別れ","理由次第で許す余地あり"],["好きな人の前では…","素の自分","少し背伸びする"],["友達の元恋人は…","絶対ナシ","気にしない"],["記念日は…","全力でお祝い","さらっと流す"],["付き合うなら…","結婚前提が理想","まずは付き合ってから考える"],["相手の過去の恋愛…","全部聞きたい","知りたくない"],["一目惚れ…","したことがある","したことがない"],["片思いは…","何年でも続けられる","見込みがなければ諦める"],["弱っているとき…","恋人の前で泣ける","一人で泣く"],["束縛は…","ちょっとされたい","自由がいい"],["恋人を友達に…","どんどん紹介したい","あまり紹介したくない"],["同棲は…","早めにしたい","結婚するまでしない"],["「好き」という言葉…","よく言う","あまり言わない"],["恋人にするなら…","年上","年下"],["遠距離恋愛は…","乗り越えられる","正直むずかしい"],["本音では…","恋人より友達や仕事","仕事や友達より恋人"],["告白は…","自分からする","される側でいたい"],["元恋人に偶然会ったら…","話しかける","気づかないふり"],["気持ちが冷めるのは…","小さな違和感の積み重ね","一度の大きな事件"],["恋愛に必要なのは…","ドキドキの刺激","ほっとする安心"],["運命の相手…","信じている","信じていない"]];
+const A=[
+["恋人とのスキンシップは…","多めがいい","ほどほどがいい"],["体の関係になるタイミング…","気持ちが固まれば早くてもOK","時間をかけて信頼してから"],["付き合う前に体の関係…","始まりとしてアリ","ナシ"],["体の相性は…","かなり重要","気持ちが通じていれば二の次"],["性の話を恋人と…","オープンに話せる","恥ずかしくて話せない"],["夜の雰囲気は…","ムードを大事にしたい","自然な流れでいい"],["相手の経験人数…","気にならない","正直気になる"],["誘うのは…","自分から誘える","誘われたい"],["ワンナイトは…","ありえる","ありえない"],["キスは…","早めにしたい","関係が固まってから"],["割り切った関係は…","できる","無理"],["理想の頻度は…","多め","少なめ・たまに"],["そのあとは…","朝までくっついていたい","自分の時間も欲しい"],["ドキッとするのは…","仕草や雰囲気","見た目やスタイル"],["新しい試みには…","興味がある","抵抗がある"],["夜の主導権は…","リードしたい","リードされたい"],["友達との下ネタは…","盛り上がれる","苦手"],["好きじゃない人と…","できてしまうこともある","絶対にできない"]];
+const A2=[["恋人にしてほしい誘い方は…","ストレートに伝えてほしい","雰囲気で察したい"],["初めての夜、相手に…","経験を正直に話してほしい","聞かない方がいい"],["好きな人と…","毎回でも新鮮さを求めたい","安心できる形が一番"],["お互いの好みを…","言葉で伝え合いたい","察し合いたい"],["付き合い始めの熱量は…","体の距離も早く縮めたい","心の距離が先"],["もし体の相性が合わないなら…","話し合って乗り越える","別れを考える"],["恋人以外にも…","魅力を感じてしまうことはある","まったくない"],["夜のあと、一番うれしいのは…","ぎゅっと抱きしめてくれる","優しい言葉をかけてくれる"],["旅行先でのお泊まりは…","ワクワクする特別な時間","普段通りがいい"],["ご無沙汰になったら…","正直に相談したい","気づかないふりをしてしまう"],["パートナーの色気を感じるのは…","ふとした横顔","距離が近づいた瞬間"],["恋人の過去の相手との比較…","気になってしまう","まったく気にならない"],["夜の話を友達に…","気軽に話せる","絶対に話さない"],["付き合う前の夜のお誘い…","断らないかも","きっぱり断る"],["体の関係のあとの気持ち…","もっと好きになる","冷静になることもある"],["恋人の嫉妬は…","ちょっと嬉しい","重く感じる"],["もし相手が経験豊富なら…","頼もしい","少し不安になる"],["理想のデートの締めは…","そのまま二人きりへ","名残惜しく解散"]];
+const K=[["片思い中、一番しがちなのは…","相手のSNSをチェック","偶然を装って会いに行く"],["好きバレ…","気づいてほしい","絶対バレたくない"],["告白のタイミング…","気持ちが高まったらすぐ","勝算が見えてから"],["相手に恋人がいたら…","諦めない","諦める"],["友達の好きな人を好きになったら…","身を引く","正直に勝負する"],["連絡は…","自分から頻繁に送る","向こうから来るのを待つ"],["好きな人の前で…","つい目で追ってしまう","目が合わせられない"],["片思いが長引いたら…","伝えてスッキリしたい","友達のままでいい"],["相手に好きな人がいると知ったら…","応援しながら想い続ける","距離を置く"],["誘うなら…","二人きりのごはん","みんなでの集まり"],["好意のサインは…","わかりやすく出す","さりげなく出す"],["片思いのとき…","普段通りの自分","とにかくよく見せたい"],["相手の優しさは…","脈ありだと思いたい","誰にでも優しいんだと思う"],["告白して振られたら…","友達に戻りたい","もう会わない"],["片思いの夢は…","よく見る","あまり見ない"],["好きな人の好みに…","合わせて変わりたい","自分らしさを貫く"],["両思いかもと思ったら…","自分から動く","相手の出方を待つ"],["片思いは…","ずっと楽しい","正直しんどい"]];
+const S=[["学生の恋愛は…","勢いが大事","じっくり育てたい"],["放課後・授業後は…","毎日一緒に帰りたい","友達との時間も大切にしたい"],["初めての恋人に…","全部初めてがいい","経験がある人がいい"],["クラスや部活の恋愛は…","知られても平気","内緒にしたい"],["つい優先してしまうのは…","友達","恋人"],["告白は…","呼び出して直接","LINEやメッセージ"],["テスト前のデートは…","一緒に勉強","会わずに集中"],["恋人との思い出は…","写真をたくさん撮る","心に残せればいい"],["卒業・進学で離れるなら…","続けたい","区切りをつけたい"],["青春の恋は…","一生の宝物","いつか笑い話"]];
+const W=[["仕事が忙しいとき…","会えなくても信頼する","時間を作ってほしい"],["結婚を意識するのは…","付き合ってすぐ","数年たってから"],["職場恋愛は…","アリ","ナシ"],["デート代は…","基本割り勘","どちらかが多めに出す"],["同棲前に…","お金の話をしておきたい","流れでいい"],["SNSでの交際報告は…","積極的にしたい","しない"],["休日は…","恋人とべったり","それぞれの時間も大事"],["相手の収入や仕事…","気になる","気にならない"],["友達の結婚ラッシュに…","焦る","自分のペースを貫く"],["転勤や転職で遠距離になるなら…","ついていく・来てもらう","それぞれの道を選ぶ"]];
+const T=[["恋愛に求めるのは…","将来の安定","今の心地よさ"],["過去の恋愛は…","話せる強みになる","あまり触れない"],["子どもについて…","早めに価値観を確認したい","自然の流れで"],["親や家族への紹介は…","早めにしたい","結婚が決まってから"],["年齢を重ねて…","恋愛に慎重になった","むしろ素直になれた"],["再婚や事実婚という形…","理解がある","こだわりがある"],["優先順位は…","仕事が上","恋愛が上"],["理想のパートナーとは…","ほどよい距離感","一緒に過ごす時間が長い"],["恋愛の安心は…","生活リズムが合うこと","価値観が合うこと"],["もう一度恋をするなら…","ゆっくり関係を育てたい","ときめきを大事にしたい"]];
+const R2=[["恋人に絶対言えない秘密が…","ある","ない"],["ケンカの原因で一番多いのは…","価値観のズレ","連絡や態度のすれ違い"],["愛情表現は…","言葉でもらいたい","行動でもらいたい"],["元恋人のことを今でも…","ふと思い出す","まったく思い出さない"],["「好き」より強い気持ちは…","尊敬","一緒にいる安心"],["恋人の欠点は…","受け入れて愛せる","直してほしいと思う"],["別れ話になったら…","最後まで話し合いたい","潔く受け入れる"],["恋人のSNSの交友関係…","全部把握したい","干渉したくない"],["恋愛で一番傷つくのは…","裏切られたとき","冷められたとき"],["もし復縁するなら…","元恋人とやり直したい","新しい相手と始めたい"],["恋人の異性の友達…","気にならない","正直モヤモヤする"],["付き合ってから変わるのは…","自分の方","相手の方"],["理想の関係は…","ずっとドキドキ","穏やかに支え合う"],["相手の過ちは…","一度なら許せる","許せない"],["恋人にお金を使うのは…","惜しまない","自分のためが優先"],["本気で好きな人ができると…","余裕がなくなる","むしろ落ち着く"]];
+const A3=[["恋人以外に気持ちが揺れた経験は…","ある","ない"],["相手の「求め方」で大事なのは…","情熱","優しさ"],["自分の欲求を…","素直に伝えられる","言い出しにくい"],["夜のマンネリは…","工夫して乗り越えたい","自然に任せる"],["体の関係を持つと…","気持ちが一気に深まる","関係性は変わらない"],["恋人が自分以外を想像していたら…","聞いてみたい","知りたくない"],["付き合う前の「お試し」…","アリだと思う","ありえない"],["過去の夜の思い出は…","今でも覚えている","あまり覚えていない"],["大人の関係で大事なのは…","お互いの合意","お互いの気持ち"],["理想の夜の相手は…","安心感のある人","刺激をくれる人"],["嫉妬が一番強くなるのは…","相手の過去","相手の今の異性関係"],["体の関係抜きの恋愛は…","成り立つ","成り立たない"]];
+const F=[["割り切った関係は…","心から割り切れる","どこかで期待してしまう"],["相手を好きになってしまったら…","正直に伝える","距離を置いて終わらせる"],["連絡の頻度は…","必要なときだけ","日常の連絡もほしい"],["ルールは…","最初にはっきり決める","暗黙の了解でいい"],["相手に他の相手がいても…","気にならない","気になってしまう"],["お泊まりは…","アリ","ナシ"],["自分に恋人ができたら…","関係を終わらせる","続けられるか考える"],["相手に恋人ができたら…","潔く身を引く","寂しくなる"],["この関係を友達に…","話せる人がいる","誰にも言えない"],["一番大事なのは…","お互いへの配慮","お互いの距離感"],["デートっぽいことは…","しない方が楽","してもいい"],["誕生日やイベントは…","関係ないと割り切る","少しは祝ってほしい"],["終わらせるタイミングは…","違和感を覚えたら即","状況が変わるまで"],["終わるときは…","はっきり伝える","自然消滅でいい"],["この関係で得たいのは…","安心感","刺激"],["相手に求めるのは…","誠実さ","相性"],["恋愛とこの関係は…","完全に切り分けられる","気持ちが混ざりやすい"],["相手の悩みは…","聞ける","立ち入らない"],["「好き」と言われたら…","嬉しいけど距離を取る","嬉しくて気持ちが動く"],["割り切るために…","最初に境界線を話す","様子を見て決める"],["一度終わった相手と…","また会うことがある","二度と会わない"],["会った翌日は…","いつも通りに過ごせる","少し複雑な気持ちになる"],["自分がされて嫌なのは…","突然の音信不通","気持ちを探られること"],["この関係に罪悪感が…","ある","ない"],["本命に聞かれたら…","正直に話す","隠し通す"],["相手を選ぶとき…","安心できる人が一番","相性が良ければOK"],["期限は…","決めたい","決めない"],["長く続くと…","自然に情が移る","情が移らないよう気をつける"],["周りからどう見られるかは…","気になる","気にならない"],["もし自分が本気になったら…","関係をやめる","気持ちを隠して続ける"]];
+const F2=[["関係が始まるきっかけは…","お互いの空気で自然に","最初に言葉ではっきり確認"],["相手との出会い方は…","友達や知り合い経由","アプリや外で出会った人"],["連絡を返すのは…","すぐ返す","自分のペースで返す"],["会う場所は…","いつも決まった場所","毎回違う場所"],["相手の本名・仕事・私生活…","知っておきたい","深く知らなくていい"],["会う頻度は…","定期的に会いたい","気が向いたときだけ"],["相手が急に冷たくなったら…","理由を聞く","何も聞かずに距離を置く"],["「他に会ってる人いる？」と聞かれたら…","正直に答える","はぐらかす"],["相手の誘いを断るのは…","気軽にできる","気を遣ってしまう"],["この関係で一番怖いのは…","自分が本気になること","相手が離れていくこと"],["相手の家族や友達に会うのは…","ありえない","成り行きならあり"],["相手の変化に気づいたら…","声をかける","見守る"],["会わない期間が長いと…","自然に切れる","寂しくなる"],["相手の恋愛の話を聞くのは…","割り切って聞ける","つらい"],["会ったあとの時間は…","すぐ解散したい","少し余韻を楽しみたい"],["お互いの呼び方は…","名前で呼び合う","あえて深入りしない呼び方"],["プレゼントやお土産は…","もらったらうれしい","重く感じる"],["自分から終わらせたことは…","ある","ない"],["相手から終わらされたら…","すんなり受け入れる","理由を聞きたくなる"],["この関係を続ける理由は…","孤独を埋めたい","純粋に相性が合う"],["相手の弱さを見たら…","受け止めたくなる","一歩引いてしまう"],["恋愛と比べて、この関係は…","気楽","むしろ難しい"],["相手にしてほしいのは…","ほどよい距離感","もう少し大切に扱うこと"],["関係が長くなると…","ルールを更新したい","最初のままがいい"],["相手が本命と別れたと聞いたら…","何も変わらない","少し期待してしまう"],["この関係で自分らしくいられるのは…","素の自分を出せるから","役割を演じられるから"],["相手の気持ちが読めないとき…","はっきり確認する","読まないようにする"],["続けるなら…","一人の相手と","特定の相手を決めない"],["この関係を振り返ると…","後悔はない","少し後悔がある"],["もし相手が本気になったら…","向き合って答えを出す","応えられないと伝える"]];
+const P=L.concat(A,A2,K,S,W,T,R2,A3,F,F2).map((q,k)=>[q[0],q[1],q[2],"p"+k.toString(36),(k>=30&&k<66)||k>=130?1:0]);
+const TH=[{n:"恋愛編",d:"恋愛観・本音を深掘り",r:[[0,30],[114,130]]},{n:"大人編",d:"大人の関係・夜の価値観を深掘り",ad:1,r:[[30,66],[130,142]]},{n:"セフレ編",d:"割り切った関係のリアルな本音",ad:1,r:[[142,202]]}];
+const app=document.getElementById("app"),BASE=location.href.split("#")[0];
+let mode,ans=[],i=0,target=[],QS=[],sel=new Set(L.map((_,k)=>k)),cus=[],op=new Set([0]);
+const $=h=>{app.innerHTML=h;scrollTo(0,0)};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const enc=s=>{let r="";for(let k=0;k<s.length;k++)r+=s.charCodeAt(k).toString(36).padStart(4,"0");return r};
+const dec=s=>(s.match(/.{4}/g)||[]).map(x=>String.fromCharCode(parseInt(x,36))).join("");
+const clr=()=>{try{history.replaceState(null,"",location.pathname+location.search)}catch(e){}};
+function parse(h){h=(h||"").replace(/^#/,"");let m,qs,t;
+ if(m=/^r([01]{30})$/.exec(h)){qs=P.slice(0,30);t=m[1]}
+ else if(m=/^s([01]{3,40})-([0-9a-z-]+)$/.exec(h)){t=m[1];qs=[];
+  for(const k of m[2].split("-")){
+   if(k[0]==="p"){const q=P[parseInt(k.slice(1),36)];if(!q)return null;qs.push(q)}
+   else if(k[0]==="c"&&k.length>4&&(k.length-1)%4===0){const s=dec(k.slice(1)).split("|");if(s.length!==3||!s[0]||!s[1]||!s[2])return null;qs.push([s[0],s[1],s[2],k,0])}
+   else return null}
+  if(qs.length!==t.length)return null}
+ else return null;
+ return{qs,t:[...t].map(Number)}}
+function load(h){const r=parse(h);if(!r)return false;QS=r.qs;target=r.t;return true}
+function hearts(){const d=document.createElement("div");d.id="hearts";d.setAttribute("aria-hidden","true");const cs=["#ff4d94","#ff7ab8","#d17bff","#c026d3"];for(let k=0;k<18;k++){const e=document.createElement("span");e.textContent="♥";e.style.cssText=`left:${Math.random()*96}%;font-size:${12+Math.random()*26}px;color:${cs[k%4]};animation-duration:${14+Math.random()*16}s;animation-delay:-${Math.random()*28}s`;d.appendChild(e)}document.body.prepend(d)}
+let th=0;
+function home(){
+ if(load(location.hash))return guessIntro();
+ $(`<span class="tag">2択・恋愛ディープ</span><h1>ドキドキ<span class="hh">❤︎</span>どっちどっち？</h1>
+ <p class="sub">編を選ぶとすぐ質問がスタート。本音で答えてリンクを友達に送ると、友達があなたの答えを当てにきます。</p>
+ ${TH.map((t,k)=>`<button class="card th" data-t="${k}"><b>${t.n}</b>${t.ad?'<span class="adt">18+</span>':""}<span class="sub">${t.d}</span></button>`).join("")}
+ <div class="card"><b>友達のリンクやコードで挑戦</b><input type="text" id="cd" placeholder="リンクまたはコードを貼り付け"><button class="ghost" id="go">挑戦する</button><p class="sub" id="er"></p></div>`);
+ app.querySelectorAll(".th").forEach(b=>b.onclick=()=>start(+b.dataset.t));
+ go.onclick=()=>{if(!load(cd.value.trim().replace(/^.*#/,""))){er.textContent="リンクまたはコードが正しくありません";return}guessIntro()};
+}
+const poolOf=t=>TH[t].r.flatMap(([a,b])=>Array.from({length:b-a},(_,j)=>a+j));
+function start(t){
+ th=t;mode="make";ans=[];i=0;
+ QS=poolOf(t).sort(()=>Math.random()-.5).slice(0,30).map(k=>P[k]);
+ ask();
+}
+function swap(){
+ const used=new Set(QS.map(q=>q[3])),c=poolOf(th).filter(k=>!used.has(P[k][3])).sort(()=>Math.random()-.5).slice(0,3);
+ $(`<div class="bar"><i style="width:${i/QS.length*100}%"></i></div><p class="sub">${i+1} / ${QS.length}　別の質問を選ぶ</p>
+ ${c.map(k=>`<button class="opt" data-k="${k}">${esc(P[k][0])}<br><span class="sub">${esc(P[k][1])} / ${esc(P[k][2])}</span></button>`).join("")}
+ <button class="ghost" id="rr">他の候補を見る</button>
+ <details class="card"><summary>自分で質問を書く</summary><input type="text" id="qt" maxlength="40" placeholder="質問"><input type="text" id="qa" maxlength="20" placeholder="選択肢A"><input type="text" id="qb" maxlength="20" placeholder="選択肢B"><button class="ghost" id="ad">この質問にする</button></details>
+ <button class="ghost" id="cn">もとの質問に戻る</button>`);
+ app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{QS[i]=P[+b.dataset.k];ask()});
+ rr.onclick=swap;cn.onclick=ask;
+ ad.onclick=()=>{const f=x=>x.value.replace(/\|/g,"").trim(),t=f(qt),a=f(qa),b=f(qb);if(!t||!a||!b)return;QS[i]=[t,a,b,"c"+enc(t+"|"+a+"|"+b),0];ask()};
+}
+function guessIntro(){
+ const ad=QS.some(q=>q[4]);
+ $(`<span class="tag">全${QS.length}問・2択</span><h1>友達の恋愛、いくつ当てられる？</h1>
+ <p class="sub">恋愛の本音クイズ。相手が選んだのはどっち？ 直感で答えよう。</p>
+ ${ad?'<div class="note">18歳以上向けの内容（大人の恋愛・性に関する質問）を含みます。</div>':""}
+ <button class="main" id="st">スタート</button><button class="ghost" id="mk3">私も自分の問題を作る</button><button class="ghost" id="bk">トップへ</button>`);
+ st.onclick=()=>{mode="guess";ans=[];i=0;ask()};
+ mk3.onclick=()=>{clr();target=[];home()};
+ bk.onclick=()=>{clr();target=[];QS=[];home()};
+}
+function ask(){
+ const q=QS[i],N=QS.length;
+ $(`<div class="bar"><i style="width:${i/N*100}%"></i></div>
+ <p class="sub">${i+1} / ${N}　${mode==="make"?"あなたはどっち？":"相手が選んだのはどっち？"}</p>
+ <div class="q">${esc(q[0])}</div>
+ <button class="opt" data-v="0">${esc(q[1])}</button><button class="opt" data-v="1">${esc(q[2])}</button>${mode==="make"?'<button class="ghost" id="sw">この質問は違う → 別の質問を選ぶ</button>':""}`);
+ app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(+b.dataset.v,b));
+ if(mode==="make")sw.onclick=swap;
+}
+function pick(v,b){
+ ans.push(v);
+ if(mode==="guess"){
+  const ok=v===target[i];
+  app.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.v===target[i])x.classList.add("ok");else if(x===b)x.classList.add("ng")});
+  setTimeout(next,ok?500:900);
+ }else next();
+}
+function next(){i++;i<QS.length?ask():(mode==="make"?made():result())}
+function made(){
+ const code="s"+ans.join("")+"-"+QS.map(q=>q[3]).join("-"),link=BASE+"#"+code;
+ try{location.hash=code}catch(e){}
+ $(`<span class="tag">完成</span><h1>あなたの出題リンク</h1>
+ <p class="sub">このリンクを友達に送ってください。開くだけで挑戦でき、友達も自分の問題を作って別の人へ回せます。</p>
+ <div class="code" id="cc">${esc(link)}</div>
+ <button class="main" id="cp">リンクをコピー</button>
+ <p class="sub">※リンクにはあなたの答えが含まれます。親しい人にだけ送るのがおすすめです。</p>
+ <button class="ghost" id="hm">トップへ</button>`);
+ cp.onclick=async()=>{try{await navigator.clipboard.writeText(link);cp.textContent="コピーしました"}catch(e){const r=document.createRange();r.selectNodeContents(cc);getSelection().removeAllRanges();getSelection().addRange(r);cp.textContent="選択しました。コピーしてください"}};
+ hm.onclick=()=>{clr();home()};
+}
+function result(){
+ const N=QS.length,s=ans.filter((v,k)=>v===target[k]).length,r=s/N;
+ const msg=r>=.9?"運命レベル。恋愛観が完全に一致してる！":r>=.73?"かなりの理解者。ほぼ心を読めてる":r>=.53?"そこそこ理解。まだ知らない一面がありそう":r>=.33?"意外と見えてない部分が多いかも":"ほぼ初対面レベル。ここから知っていこう";
+ const miss=QS.map((q,k)=>ans[k]!==target[k]?`<div class="row"><span>${esc(q[0])}</span><span>正解：${esc(q[target[k]+1])}</span></div>`:"").join("");
+ $(`<span class="tag">結果</span><p class="score">${s}<span style="font-size:22px"> / ${N}</span></p>
+ <p style="text-align:center;font-weight:700">${msg}</p>
+ ${miss?`<div class="card"><b>外れた問題</b>${miss}</div>`:""}
+ <button class="main" id="ag">もう一度挑戦</button><button class="ghost" id="mk2">私も自分の問題を作る</button>`);
+ ag.onclick=()=>{mode="guess";ans=[];i=0;ask()};
+ mk2.onclick=()=>{clr();target=[];home()};
+}
+addEventListener("hashchange",()=>{if(mode!=="make"&&load(location.hash))guessIntro()});
+hearts();
+home();
+</script>
+</body>
+</html>
